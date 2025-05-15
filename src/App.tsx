@@ -1,3 +1,4 @@
+import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AboutSection from "./Component/AboutSection";
 import ContactUs from "./Component/ContactUs";
@@ -9,6 +10,9 @@ import { TestimonialSection } from "./Component/TestmonialSection";
 import Values from "./Component/Values";
 import scrollToTp from "./assets/scrolltotop.png";
 import HeroSection from "./Component/HeroSection";
+import HomePage from "./pages/Homepage";
+import WorkWithUSPage from "./pages/WorkWithUs";
+import ApplyPage from "./pages/ApplyPage";
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -31,13 +35,15 @@ function App() {
   return (
     <div className="relative">
       <Navbar handleSetScroll={scrollToSection} />
-      <HeroSection handleMoveToContactUs={scrollToSection} />
-      <AboutSection />
-      <Values />
-      <ServiceSection />
-      <JoinTeam />
-      <TestimonialSection />
-      <ContactUs />
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route
+          path="/home"
+          element={<HomePage handleMoveToContactUs={scrollToSection} />}
+        />
+        <Route path="/work-with-us" element={<WorkWithUSPage />} />
+        <Route path="/apply" element={<ApplyPage />} />
+      </Routes>
       <Footer />
 
       {showScroll && (

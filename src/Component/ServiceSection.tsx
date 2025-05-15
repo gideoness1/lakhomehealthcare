@@ -17,9 +17,9 @@ const services = [
   { image: group4, title: "Personal Care" },
   { image: group5, title: "Companionship" },
   { image: group6, title: "Medical Transportation" },
-  { image: group7, title: "Safety Supervision" },
+  { image: group7, title: "Safety Long Term Care" },
   { image: group8, title: "Medication management" },
-  { image: group9, title: "Light House Keeping" },
+  { image: group9, title: "Short Term Care" },
   { image: group10, title: "Disability Support" },
 ];
 

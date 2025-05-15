@@ -114,7 +114,7 @@ const Footer = () => {
           <div></div>
 
           <div className="tablet:mt-10 text-center text-xs text-[#8BD2DD]">
-            © 2023 — Copyright
+            © 2023 — 3512 Powered
           </div>
         </div>
       </div>

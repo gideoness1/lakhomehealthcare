@@ -2,12 +2,14 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { TiThMenu } from "react-icons/ti";
 import logo from "../assets/mainlogopng.png";
+import { useNavigate } from "react-router";
 
 const Navbar = ({
   handleSetScroll,
 }: {
   handleSetScroll: (id: string) => void;
 }) => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("home");
 
   const [show, setShow] = useState(false);
@@ -69,7 +71,7 @@ const Navbar = ({
             </button>
           ))}
         </div>
-        <button className="px-6 py-3.5 bg-[#00000033] rounded-[50px] hidden lg:flex text-white text-[13px] md:text-[18px] manrope-bold">
+        <button className="px-6 py-3.5 bg-[#00000033] rounded-[50px] hidden lg:flex text-white text-[13px] md:text-[18px] manrope-bold cursor-pointer" onClick={() => navigate("/work-with-us")}>
           JOIN OUR TEAM
         </button>
         <div className={"lg:hidden"}>

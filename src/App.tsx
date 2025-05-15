@@ -51,7 +51,7 @@ function App() {
           src={scrollToTp}
           alt="Scroll to top"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-3 md:bottom-6 right-2 tablet:right-6 z-50  cursor-pointer hover:scale-110 transition-transform duration-300"
+          className="fixed bottom-3 md:bottom-6 right-2 md:right-6 z-50  cursor-pointer hover:scale-110 transition-transform duration-300"
         />
       )}
     </div>

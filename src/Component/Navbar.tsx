@@ -57,7 +57,7 @@ const Navbar = ({
           </button>
         </div>
       )}
-      <nav className="flex items-center justify-between bg-[#12697B] text-white h-[80px] px-[13px] md:px-[48px]">
+      <nav className="flex items-center justify-between bg-[#12697B] text-white h-[80px] px-[20px] md:px-[48px]">
         <img src={logo} alt="logo" />
         <div className="monrope-semibold text-[14px] hidden lg:flex items-center md:gap-x-[32px]">
           {tabs.map((tab) => (

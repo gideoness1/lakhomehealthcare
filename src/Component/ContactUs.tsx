@@ -1,16 +1,13 @@
 import map from "../assets/map.png";
 import group1 from "../assets/contact1.png";
 import group2 from "../assets/contact2.png";
-import group3 from "../assets/contact3.png";
 import group4 from "../assets/contact4.png";
 
 const ContactUs = () => {
   const services = [
     { image: group1, title: "Monday-Friday", date: "9:00 AM- 5:00 PM" },
     { image: null, title: "" },
-    { image: group2, title: "During Working Hours", date: "+1 (614) 813-7003" },
-    { image: null, title: "After Working Hours", date: "+1 (862) 240 -2350" },
-    { image: group3, title: "Fax", date: "(703) 332-9802" },
+    { image: group2, title: "Phone Number", date: "+1 (380) 225-1377" },
     { image: group4, title: "Email", date: "info@lakhomehealthcare.com" },
   ];
 

@@ -79,7 +79,7 @@ const Footer = () => {
             <div className="text-sm">
               <h3 className="text-[#8BD2DD] text-[10px] mb-2 md:mb-6">CONTACT US</h3>
               <div className="space-y-1 md:space-y-[10px] text-[14px] monrope-regular">
-                <p>+1 (614) 813-7003</p>
+                <p>+1 (380) 225-1377</p>
                 <p>info@lakhomehealthcare.com</p>
                 <p>USA Columbus, Ohio</p>
               </div>

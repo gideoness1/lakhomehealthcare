@@ -36,9 +36,9 @@ const ContactUs = () => {
       id="contact"
       className="px-6 lg:px-[103px] mb-5 lg:mb-[150px]"
     >
-      <div className=" flex flex-col lg:flex-row items-center gap-x-[128px] mb-5 lg:mb-[150px]">
-        <div className="lg:w-[366px] text-center lg:text-left text-[#12697B] text-[13px] lg:text-[18px] manrope-semibold space-y-2 lg:space-y-8 mb-5 lg:mb-0">
-          <h1 className="text-[26px] lg:text-[36px]  font-integral capitalize">
+      <div className=" flex flex-col lg:flex-row md:items-center gap-x-[128px] mb-8 lg:mb-[150px]">
+        <div className="lg:w-[366px] text-[#12697B] text-[14px] lg:text-[18px] manrope-semibold space-y-2 lg:space-y-8 mb-10 lg:mb-0">
+          <h1 className="text-[26px] lg:text-[36px] font-integral capitalize">
             CONTACT US
           </h1>
           <p>
@@ -50,7 +50,7 @@ const ContactUs = () => {
         <ContactCard />
       </div>
       <div>
-        <img src={map} alt="map-logo" className="w-full" />
+        <img src={map} alt="map-logo" className="w-full mb-[110px] lg:mb-0" />
       </div>
     </section>
   );

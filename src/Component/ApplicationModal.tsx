@@ -66,7 +66,7 @@ const ApplicationModal = () => {
                     <img src={pdf} alt="pdf_logo" />
                   </div>
                   <p className="manrope-bold text-[14px] leading-6 text-gray">
-                    Amazing Health Application Form
+                    Lak Home Health Application Form
                   </p>
                 </div>
                 <FiDownload size={24} />
@@ -157,12 +157,14 @@ const ApplicationModal = () => {
             <h2 className="text-[22px] leading-[32px] manrope-bold">Success</h2>
             <p className="text-[#4F4F4F] text-[14px] manrope-regular text-center md:w-[436px] mb-4">
               Your application for the{" "}
-              <span className="manrope-bold">
-                Nursing Home Assistant
-              </span>{" "}
-              role has been submitted successfully
+              <span className="manrope-bold">Nursing Home Assistant</span> role
+              has been submitted successfully
             </p>
-            <Button variant="primary" className="!bg-[#0e5462] !text-white !manrope-bold" onClick={() => navigate("/home")}>
+            <Button
+              variant="primary"
+              className="!bg-[#0e5462] !text-white !manrope-bold"
+              onClick={() => navigate("/home")}
+            >
               OKAY
             </Button>
           </div>

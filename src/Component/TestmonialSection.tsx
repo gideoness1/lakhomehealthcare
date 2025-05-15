@@ -30,20 +30,23 @@ export const TestimonialSection = () => {
   ];
 
   return (
-    <section id="blog" className="relative flex flex-col lg:flex-row bg-[#12697B] text-white py-12 px-6 lg:px-[100px] lg:py-[71.5px] mb-5 lg:mb-[150px]">
-      <div >
-        <h2 className=" text-[26px] lg:text-3xl font-integral mb-10 lg:w-[330px] text-center lg:text-left capitalize  ">
+    <section
+      id="blog"
+      className="relative flex flex-col-reverse lg:flex-row bg-[#12697B] text-white py-12 px-6 lg:px-[100px] lg:py-[71.5px] mb-[60px] lg:mb-[150px]"
+    >
+      <div>
+        <h2 className=" text-[24px] lg:text-3xl font-integral mb-5 lg:w-[330px] capitalize  ">
           WHAT OUR CLIENTS HAVE TO SAY
         </h2>
-          <div className="grid md:grid-cols-2 gap-[52px]">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} />
-            ))}
-          </div>
-      </div>
-        <div className="hidden md:block relative">
-          <img src={groupedImage} alt="Grouped Image " />
+        <div className="grid md:grid-cols-2 gap-[52px]">
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard key={index} {...testimonial} />
+          ))}
         </div>
+      </div>
+      <div className=" relative">
+        <img src={groupedImage} alt="Grouped Image " />
+      </div>
     </section>
   );
 };

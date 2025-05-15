@@ -3,14 +3,23 @@ import Button from "./ui/Button.tsx";
 import ApplicationModal from "./ApplicationModal.tsx";
 import { useNavigate } from "react-router-dom";
 import { useModal } from "../hooks/useModal.tsx";
+import { useLocation } from "react-router";
+import { useEffect } from "react";
 
 export const Apply = () => {
+  const location = useLocation();
+  const state = location.state as { title: string };
   const navigate = useNavigate();
   const { isModalActive, showModal } = useModal();
   const openUploadFileModal = () => showModal("showUploadFileModal");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div
-      className={`bg-[#F5F5F5] p-4 md:px-[64px] md:py-[48px] md:flex justify-between`}
+      className={`bg-[#F5F5F5] p-4 pb-[48px] md:p-0 md:px-[64px] md:py-[48px] md:flex justify-between`}
     >
       {isModalActive("showUploadFileModal") && <ApplicationModal />}
       <div
@@ -27,19 +36,15 @@ export const Apply = () => {
             </p>
           </div>
           <h1 className={`text-[32px] leading-[32px] manrope-bold mb-6`}>
-            Case Manager
+            {state.title}
           </h1>
-          <p
-            className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6`}
-          >
+          <p className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6`}>
             Are you passionate about making a difference in the lives of others?
-            Amazing Healthcare is looking for compassionate and dedicated
+            Lak Home Healthcare is looking for compassionate and dedicated
             Nursing Home Attendants to join our dynamic team!
           </p>
           <h3 className={`leading-[32px] manrope-bold mb-6`}>About the Role</h3>
-          <p
-            className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6`}
-          >
+          <p className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6`}>
             As a Nursing Home Attendant, you’ll play a vital role in providing
             top-quality care to our residents, ensuring their comfort, safety,
             and well-being. From assisting with daily activities to offering
@@ -49,9 +54,7 @@ export const Apply = () => {
           <h3 className={`leading-[32px] manrope-bold mb-6`}>
             Key Responsibilities
           </h3>
-          <ul
-            className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6 `}
-          >
+          <ul className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6 `}>
             <li>
               Assist residents with personal care needs, including bathing,
               dressing, and grooming.
@@ -75,9 +78,7 @@ export const Apply = () => {
           <h3 className={`leading-[32px] manrope-bold mb-6`}>
             What We’re Looking For
           </h3>
-          <ul
-            className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6`}
-          >
+          <ul className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6`}>
             <li>
               A caring and empathetic nature with a passion for helping others.
             </li>
@@ -92,11 +93,9 @@ export const Apply = () => {
             </li>
           </ul>
           <h3 className={`leading-[32px] manrope-bold mb-6`}>
-            Why Join Amazing Healthcare?
+            Why Join Lak Home Healthcare?
           </h3>
-          <ul
-            className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6 `}
-          >
+          <ul className={`text-[#4F4F4F] leading-[24px] manrope-medium mb-6 `}>
             <li>Competitive salary and benefits.</li>
             <li>
               Comprehensive training and opportunities for professional growth.
@@ -116,7 +115,7 @@ export const Apply = () => {
           <p className={`leading-[24px] manrope-medium mb-6`}>
             Don’t miss this opportunity to join a team that values your
             dedication and passion. Apply now and start a fulfilling career with
-            Amazing Healthcare!
+            Lak Home Healthcare!
           </p>
           <Button
             variant={`primary`}
@@ -127,27 +126,19 @@ export const Apply = () => {
           </Button>
 
           <div className={`mb-4`}>
-            <h3 className={`leading-[24px] manrope-bold`}>
-              Location
-            </h3>
+            <h3 className={`leading-[24px] manrope-bold`}>Location</h3>
             <span className={`leading-[24px] manrope-medium`}>
               Accra, Greater Accra
             </span>
           </div>
           <div className={`w-full h-[1px] bg-[#E7E7E7] mb-4`}></div>
           <div className={`mb-4`}>
-            <h3 className={`leading-[24px] manrope-bold`}>
-              Department
-            </h3>
-            <span className={`leading-[24px] manrope-medium`}>
-              Healthcare
-            </span>
+            <h3 className={`leading-[24px] manrope-bold`}>Department</h3>
+            <span className={`leading-[24px] manrope-medium`}>Healthcare</span>
           </div>
           <div className={`w-full h-[1px] bg-[#E7E7E7] mb-4`}></div>
           <div className={`mb-4`}>
-            <h3 className={`leading-[24px] manrope-bold`}>
-              Employment Type
-            </h3>
+            <h3 className={`leading-[24px] manrope-bold`}>Employment Type</h3>
             <span className={`leading-[24px] manrope-medium`}>
               Full Time / Part-Time/ On-Call
             </span>
@@ -157,9 +148,7 @@ export const Apply = () => {
             <h3 className={`leading-[24px] manrope-bold`}>
               Minimum Experience
             </h3>
-            <span className={`leading-[24px] manrope-medium`}>
-              Experienced
-            </span>
+            <span className={`leading-[24px] manrope-medium`}>Experienced</span>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import logo from "../assets/footerlogo.png";
 
 const Footer = () => {
+  const currentyear = new Date().getFullYear();
   return (
     <footer className="bg-[#05242A] text-white py-12 px-6 lg:py-[76.5px] lg:px-[108px]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -42,7 +43,10 @@ const Footer = () => {
 
             <button
               type="submit"
-              className="bg-[#12697B] text-white px-8 py-[10px] rounded-full hover:bg-[#176a78] transition"
+              className="bg-[#12697B] text-white px-8 py-[10px] rounded-full hover:bg-[#176a78] transition cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
             >
               Send a request
             </button>
@@ -50,7 +54,7 @@ const Footer = () => {
           <p className="text-xs text-[#8BD2DD]">Privacy</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+        <div className="grid grid-cols-3 gap-4 md:gap-8 mt-[71px] md:mt-0">
           {/* Info Columns */}
           <div className="text-sm">
             <h3 className="text-[#8BD2DD] text-[10px] mb-2 md:mb-6">INFO</h3>
@@ -63,7 +67,9 @@ const Footer = () => {
           </div>
 
           <div className="text-sm">
-            <h3 className="text-[#8BD2DD] text-[10px] mb-2 md:mb-6">ABOUT US</h3>
+            <h3 className="text-[#8BD2DD] text-[10px] mb-2 md:mb-6">
+              ABOUT US
+            </h3>
             <div className="space-y-1 md:space-y-[10px] text-[14px] monrope-regular">
               <p>Join Our Team</p>
               <p>Technologies</p>
@@ -71,50 +77,46 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=" hidden md:block">
+          <div className="block">
             <img src={logo} alt="logo" />
           </div>
-
+          {/* <div className=""></div> */}
           {/* Contact & Logo */}
-            <div className="text-sm">
-              <h3 className="text-[#8BD2DD] text-[10px] mb-2 md:mb-6">CONTACT US</h3>
-              <div className="space-y-1 md:space-y-[10px] text-[14px] monrope-regular">
-                <p>+1 (380) 225-1377</p>
-                <p>info@lakhomehealthcare.com</p>
-                <p>USA Columbus, Ohio</p>
-              </div>
+          <div className="text-sm col-span-3 row-span-3 mt-[65px] md:mt-0">
+            <h3 className="text-[#8BD2DD] text-[10px] text-center md:text-left mb-2 md:mb-6">
+              CONTACT US
+            </h3>
+            <div className="space-y-1 md:space-y-[10px] text-center md:text-left text-[14px] monrope-regular">
+              <p>+1 (380) 225-1377</p>
+              <p>info@lakhomehealthcare.com</p>
+              <p>USA Columbus, Ohio</p>
             </div>
-            <div className=" block md:hidden">
-            <img src={logo} alt="logo" />
           </div>
-            <div className=" hidden md:block"></div>
-
-                <div className=" hidden md:block"></div>
-            <div className="flex items-center gap-4">
-              <a
-                href="#"
-                className="p-2 rounded-full border border-[#4C808A] hover:bg-[#4C808A]"
-              >
-                <FaFacebookF />
-              </a>
-              <a
-                href="#"
-                className="p-2 rounded-full border border-[#4C808A] hover:bg-[#4C808A]"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="#"
-                className="p-2 rounded-full border border-[#4C808A] hover:bg-[#4C808A]"
-              >
-                <FaTwitter />
-              </a>
-            </div>
+          <div className="md:hidden block"></div>
+          <div className="flex items-center gap-4 mt-[42px] md:mt-0">
+            <a
+              href="#"
+              className="p-2 rounded-full border border-[#4C808A] hover:bg-[#4C808A]"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="#"
+              className="p-2 rounded-full border border-[#4C808A] hover:bg-[#4C808A]"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="#"
+              className="p-2 rounded-full border border-[#4C808A] hover:bg-[#4C808A]"
+            >
+              <FaTwitter />
+            </a>
+          </div>
           {/* Bottom */}
-          <div></div>
-
-          <div className="md:mt-10 text-center text-xs text-[#8BD2DD]">
-            © 2023 — 3512 Powered
+          <div className=""></div>
+          <div className="md:mt-10 text-center text-xs text-[#8BD2DD] col-span-3 row-span-3 md:col-auto md:row-auto">
+            © {currentyear} — 3512 Powered
           </div>
         </div>
       </div>

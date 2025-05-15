@@ -7,10 +7,11 @@ import { TestimonialSection } from "../Component/TestmonialSection.tsx";
 import Values from "../Component/Values.tsx";
 
 const HomePage = ({
-    handleMoveToContactUs,
-  }: {
-    handleMoveToContactUs: (id: string) => void;
-  }) => {
+  handleMoveToContactUs,
+}: {
+  handleMoveToContactUs: (id: string) => void;
+}) => {
+
   return (
     <div>
       <HeroSection handleMoveToContactUs={handleMoveToContactUs} />

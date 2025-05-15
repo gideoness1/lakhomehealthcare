@@ -70,3 +70,17 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+/* Ensure smooth transitions for opacity changes */
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Prevent flash of unstyled content */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

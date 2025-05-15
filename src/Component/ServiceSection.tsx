@@ -25,11 +25,11 @@ const services = [
 
 const ServicesCards = () => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 lg:space-y-8.5 lg:space-x-[32px]">
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-8.5 gap-x-[32px]">
       {services.map((item) => (
         <div className="flex  items-center gap-x-4">
-          <img src={item.image} alt="group" className="w-10 lg:w-fit" />
-          <p className="text-[#4E4E4E] text:[13px] lg:text-[18px] manrope-semibold ">
+          <img src={item.image} alt="group" className="w-6 lg:w-fit" />
+          <p className="text-[#4E4E4E] text-[14px] lg:text-[18px] manrope-semibold ">
             {item.title}
           </p>
         </div>
@@ -40,10 +40,10 @@ const ServicesCards = () => {
 
 const ServiceSection = () => {
   return (
-    <section id="services" className="mx-6 lg:mx-0 lg:px-[103px] mb-5 lg:mb-[150px]">
-      <div className=" flex flex-col lg:flex-row items-center gap-x-[58px] mb-5 lg:mb-[150px]">
-        <div className="lg:w-[366px] text-[#12697B] text-[13px] lg:text-[18px] manrope-semibold space-y-2 lg:space-y-8 mb-5 lg:mb-0">
-          <h1 className="text-[26px] lg:text-[36px] font-integral text-center lg:text-left capitalize">Our services</h1>
+    <section id="services" className="mx-6 lg:mx-0 lg:px-[103px] mb-[110px] lg:mb-[150px]">
+      <div className=" flex flex-col lg:flex-row items-center gap-x-[58px] mb-[110px] lg:mb-[150px]">
+        <div className="lg:w-[366px] text-[#12697B] text-[14px] lg:text-[18px] manrope-semibold space-y-2 lg:space-y-8 mb-6 lg:mb-0">
+          <h1 className="text-[24px] lg:text-[36px] font-integral capitalize">Our services</h1>
           <p>
             Whether you’re looking for compassionate in-home care for a loved
             one or need support managing daily health needs, LAK Home Healthcare
@@ -53,8 +53,8 @@ const ServiceSection = () => {
         <ServicesCards />
       </div>
       <div className=" flex flex-col lg:flex-row items-center justify-between">
-        <div className="lg:w-[548px] text-[#12697B] text-[13px] lg:text-[20px] manrope-semibold space-y-2 lg:space-y-8 mb-5 lg:mb-0">
-          <h1 className="text-[26px] lg:text-[36px] font-integral text-center lg:text-left capitalize">Areas of service</h1>
+        <div className="lg:w-[548px] text-[#12697B] text-[14px] lg:text-[20px] manrope-semibold space-y-2 lg:space-y-8 mb-5 lg:mb-0">
+          <h1 className="text-[26px] lg:text-[36px] font-integral capitalize">Areas of service</h1>
           <p>
             Columbus, Franklin county, Fairfield County, Pickaway county,Licking
             county, Delaware county, Perry county, Scioto, Marion, Madison,

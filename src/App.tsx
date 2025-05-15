@@ -1,15 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import AboutSection from "./Component/AboutSection";
-import ContactUs from "./Component/ContactUs";
 import Footer from "./Component/Footer";
-import JoinTeam from "./Component/JoinTeam";
 import Navbar from "./Component/Navbar";
-import ServiceSection from "./Component/ServiceSection";
-import { TestimonialSection } from "./Component/TestmonialSection";
-import Values from "./Component/Values";
 import scrollToTp from "./assets/scrolltotop.png";
-import HeroSection from "./Component/HeroSection";
 import HomePage from "./pages/Homepage";
 import WorkWithUSPage from "./pages/WorkWithUs";
 import ApplyPage from "./pages/ApplyPage";
@@ -31,6 +24,7 @@ function App() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  
 
   return (
     <div className="relative">

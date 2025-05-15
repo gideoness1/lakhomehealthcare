@@ -32,13 +32,7 @@ const HeroSection = ({
       }}
     >
       <div
-        className={`text-white lg:mt-[120px] flex flex-col items-center justify-center text-center ${
-          currentIndex === 0
-            ? "lg:items-center lg:text-center"
-            : currentIndex % 2 === 0
-            ? "lg:items-start lg:text-left"
-            : "lg:items-end lg:text-right"
-        } h-full`}
+        className={`text-white lg:mt-[120px] flex flex-col items-center justify-center text-center lg:items-center lg:text-center h-full`}
       >
         <div className=" lg:w-[609px]">
           <h1

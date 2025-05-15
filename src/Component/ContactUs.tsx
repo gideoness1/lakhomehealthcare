@@ -8,6 +8,7 @@ const ContactUs = () => {
     { image: group1, title: "Monday-Friday", date: "9:00 AM- 5:00 PM" },
     { image: null, title: "" },
     { image: group2, title: "Phone Number", date: "+1 (380) 225-1377" },
+    { image: null, title: "" },
     { image: group4, title: "Email", date: "info@lakhomehealthcare.com" },
   ];
 

@@ -34,7 +34,7 @@ export const TestimonialSection = () => {
   return (
     <section
       id="blog"
-      className="relative flex flex-col-reverse lg:flex-row bg-[#12697B] text-white py-12 px-6 lg:px-[100px] lg:py-[71.5px] mb-[60px] lg:mb-[150px]"
+      className="relative overflow-hidden flex flex-col-reverse lg:flex-row bg-[#12697B] text-white py-12 px-6 lg:px-[100px] lg:py-[71.5px] mb-[60px] lg:mb-[150px]"
     >
       <div className="absolute bottom-[-180px] md:top-[200px] left-[-150px] md:left-[-50px]">
         <img src={shadowup} alt="logo" />

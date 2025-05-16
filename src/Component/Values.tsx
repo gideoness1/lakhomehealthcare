@@ -1,11 +1,11 @@
 import archeryLogo from "../assets/arch.png";
 import archery from "../assets/archerymobile.svg";
-import shadowup from "../assets/shadowup.svg";
+import shadowup from "../assets/shadowblack.svg";
 
 const Values = () => {
   return (
     <div className="relative overflow-hidden lg:h-[363px] bg-[#D0F7FF] flex flex-col md:flex-row md:gap-x-[112.8px] mb-[60px] md:mb-[150px] pb-[90px] md:pb-0 px-6 md:p-0">
-      <div className="absolute top-[-180px] right-[-200px]">
+      <div className="absolute top-[-80px] right-[-190px]">
         <img src={shadowup} alt="logo" />
       </div>
       <img src={archeryLogo} alt="" className="mb-10 md:mb-0 hidden md:block" />

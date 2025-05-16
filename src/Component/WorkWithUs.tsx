@@ -76,7 +76,7 @@ export const WorkWithUS = () => {
           </div>
         </div>
       </div>
-      <div className={`pb-[100px] px-[16px] md:px-[64px]`}>
+      <div className={`pt-[100px] md:pt-0 pb-[100px] px-[16px] md:px-[64px]`}>
         <div
           className={`flex flex-col justify-center items-center mb-[60px] lg:mb-6`}
         >

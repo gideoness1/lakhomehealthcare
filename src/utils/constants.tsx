@@ -7,37 +7,37 @@ import img5 from "../assets/img5.svg";
 export const applicationList = [
   {
     id: 1,
-    title: "Nursing Home Attendant",
+    title: "Case Manager",
     description:
-      "Provide expert medical care, and be a vital part of our residents' health journey.",
+      "Deliver exceptional medical care and play a crucial role in our residents’ health journeys.",
     imageUrl: img1,
   },
   {
     id: 2,
-    title: "Licensed Practical Nurse (LPN)",
+    title: "Registered Nurse",
     description:
-      "Support residents with medical needs while working closely with RNs and the care team.",
+      "Assist residents with their medical needs while collaborating closely with RNs and the healthcare team.",
     imageUrl: img2,
   },
   {
     id: 3,
-    title: "Certified Nursing Assistant (CNA)",
+    title: "License Practical Nurse",
     description:
-      "Make a meaningful impact by assisting residents with daily activities.",
+      "Create a positive impact by helping residents with their daily activities.",
     imageUrl: img3,
   },
   {
     id: 4,
-    title: "Dietitian/Nutritionist",
+    title: "State Tested Nurse Aide",
     description:
-      "Develop personalized meal plans that promote health and wellness for our residents.",
+      "Craft tailored meal plans that enhance health and well-being for our residents.",
     imageUrl: img4,
   },
   {
     id: 5,
-    title: "Recreational Therapist",
+    title: "Home Health Aide",
     description:
-      "Compassionate assistance that promotes independence and comfort.",
+      "Deliver exceptional medical care and play a crucial role in our residents’ health journeys.",
     imageUrl: img5,
   },
 ];

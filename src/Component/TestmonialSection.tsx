@@ -1,5 +1,7 @@
 import { TestimonialCard } from "./TestimonialCard";
 import groupedImage from "../assets/Images.png";
+import shadowup from "../assets/shadowup.svg";
+import shadowdown from "../assets/shadowdown.svg";
 
 export const TestimonialSection = () => {
   const testimonials = [
@@ -34,6 +36,12 @@ export const TestimonialSection = () => {
       id="blog"
       className="relative flex flex-col-reverse lg:flex-row bg-[#12697B] text-white py-12 px-6 lg:px-[100px] lg:py-[71.5px] mb-[60px] lg:mb-[150px]"
     >
+      <div className="absolute top-[200px] left-[-50px] hidden md:block">
+        <img src={shadowup} alt="logo" />
+      </div>
+      <div className="absolute bottom-[70px] right-[-50px] hidden md:block">
+        <img src={shadowdown} alt="logo" />
+      </div>
       <div>
         <h2 className=" text-[24px] lg:text-3xl font-integral mb-5 lg:w-[330px] capitalize  ">
           WHAT OUR CLIENTS HAVE TO SAY

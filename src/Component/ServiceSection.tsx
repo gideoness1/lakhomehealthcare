@@ -44,14 +44,14 @@ const ServiceSection = () => {
   return (
     <section
       id="services"
-      className="mx-6 lg:mx-0 lg:px-[103px] mb-[110px] lg:mb-[150px]"
+      className="relative mx-6 lg:mx-0 lg:px-[103px] mb-[110px] lg:mb-[150px]"
     >
       <div className=" flex flex-col lg:flex-row items-center gap-x-[58px] mb-[110px] lg:mb-[150px]">
         <div className="lg:w-[366px] text-[#12697B] text-[14px] lg:text-[18px] manrope-semibold space-y-2 lg:space-y-8 mb-6 lg:mb-0">
           <h1 className="text-[24px] lg:text-[36px] font-integral capitalize">
             Our services
           </h1>
-          <p>
+          <p className="text-[#0A0A0A]">
             Whether you’re looking for compassionate in-home care for a loved
             one or need support managing daily health needs, LAK Home Healthcare
             is ready to help.
@@ -64,7 +64,7 @@ const ServiceSection = () => {
           <h1 className="text-[26px] lg:text-[36px] font-integral capitalize">
             Areas of service
           </h1>
-          <p>
+          <p className="text-[#0A0A0A]">
             Columbus, Franklin county, Fairfield County, Pickaway county,Licking
             county, Delaware county, Perry county, Scioto, Marion, Madison,
             Logan, Fayette and all the communities in Ohio.

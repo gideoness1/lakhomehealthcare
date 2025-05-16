@@ -16,7 +16,7 @@ const JoinTeam = () => {
             <h1 className="text-[26px] lg:text-[36px] font-integral capitalize">
               join our team
             </h1>
-            <p className="text-[#4F4F4F]">
+            <p className="text-[#0A0A0A]">
               LAK Home Healthcare provides equal job opportunity for all. We
               safeguard employees and job applicants from discrimination on the
               basis of their race, color, religion, gender identity, sexual

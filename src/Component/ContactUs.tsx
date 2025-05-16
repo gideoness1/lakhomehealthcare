@@ -41,7 +41,7 @@ const ContactUs = () => {
           <h1 className="text-[26px] lg:text-[36px] font-integral capitalize">
             CONTACT US
           </h1>
-          <p>
+          <p className="text-[#0A0A0A]">
             At LAK Home Healthcare, we’re here to support you and your loved
             ones with compassionate, professional care right in the comfort of
             your home.

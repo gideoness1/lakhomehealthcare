@@ -1,10 +1,15 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import logo from "../assets/footerlogo.png";
+import shadowimage from "../assets/shadowup.svg";
 
 const Footer = () => {
   const currentyear = new Date().getFullYear();
   return (
-    <footer className="bg-[#05242A] text-white py-12 px-6 lg:py-[76.5px] lg:px-[108px]">
+    <footer className="relative overflow-hidden bg-[#05242A] text-white py-12 px-6 lg:py-[76.5px] lg:px-[108px]">
+      {/* absolute image */}
+      <div className="absolute top-[750px] right-0  md:top-[10px] md:right-[-50px]">
+        <img src={shadowimage} alt="logo" />
+      </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Feedback Form */}
         <div className=" lg:w-[392px] bg-[#0A3D48] rounded-2xl p-6 md-py-8 md-px-6 space-y-5">

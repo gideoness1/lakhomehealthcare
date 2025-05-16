@@ -13,40 +13,36 @@ type CardProps = {
 export const Card: React.FC<CardProps> = ({ title, description, imageUrl }) => {
   const navigate = useNavigate();
   return (
-    <div className="w-full md:w-[300.25px]  p-[10px] bg-white rounded-lg md:mb-[80px] lg:mb-0">
-      <div className={"relative md:w-[280px]"}>
-        <img
-          src={imageUrl}
-          alt={title}
-          className=" w-full md:h-[204px] object-cover mb-[10px]"
-        />
+    <div className="w-full md:w-[300.25px] p-[10px] bg-white rounded-lg md:mb-[80px] lg:mb-0 flex flex-col">
+    <div className="relative md:w-[280px] flex flex-col h-full">
+      <img
+        src={imageUrl}
+        alt={title}
+        className="w-full md:h-[204px] object-cover mb-[10px]"
+      />
+      <div className="flex flex-col justify-between flex-1 bg-white rounded-lg text-left py-4 md:p-6">
+        <div>
+          <h3 className="text-[18px] md:text-[24px] leading-[28px] manrope-semibold text-black md:w-[232.25px] md:mb-2">
+            {title}
+          </h3>
+          <p className="text-[#666666] manropw-regular text-[14px] md:text-[16px] leading-[28px] mb-2 md:w-[232.25px] line-clamp-3">
+            {description}
+          </p>
+        </div>
+  
         <div
-          className={` md:h-full py-4 md:p-6 bg-white rounded-lg text-left flex flex-col justify-between`}
+          className="flex items-center manrope-bold text-[#12697B] gap-x-2 cursor-pointer mt-4"
+          onClick={() => navigate("/apply", { state: { title } })}
         >
-          <div className="">
-            <h3 className="text-[18px] md:text-[24px] leading-[28px] manrope-semibold text-black md:w-[232.25px] md:mb-2">
-              {title}
-            </h3>
-            <p className="text-[#666666] manropw-regular text-[14px] md:text-[16px] leading-[28px] mb-2 md:w-[232.25px] line-clamp-3">
-              {description}
-            </p>
-          </div>
-          <div
-            className={`flex items-center manrope-bold text-[#12697B] gap-x-2 cursor-pointer`}
-            onClick={() => navigate("/apply", { state: { title } })}
-          >
-            <p
-              className={` text-[14px] md:text-[18px] leading-[28px] uppercase`}
-            >
-              Apply now{" "}
-            </p>
-            <span>
-              <FiArrowRight className="w-4 h-4 md:w-6 md:h-6 " />
-            </span>
-          </div>
+          <p className="text-[14px] md:text-[18px] leading-[28px] uppercase">
+            Apply now
+          </p>
+          <FiArrowRight className="w-4 h-4 md:w-6 md:h-6" />
         </div>
       </div>
     </div>
+  </div>
+  
   );
 };
 
@@ -102,7 +98,7 @@ export const WorkWithUS = () => {
         </div>
 
         <div>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-5 md:gap-[37px]">
+          <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 lg:gap-x-10 2xl:gap-x-0 gap-4">
             {applicationList.map((card) => (
               <Card
                 key={card.id}

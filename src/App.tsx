@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from "./Component/Footer";
 import Navbar from "./Component/Navbar";
-import scrollToTp from "./assets/scrolltotop.png";
+import { Navigation2 } from "lucide-react";
 import HomePage from "./pages/Homepage";
 import WorkWithUSPage from "./pages/WorkWithUs";
 import ApplyPage from "./pages/ApplyPage";
@@ -41,12 +41,13 @@ function App() {
       <Footer />
 
       {showScroll && (
-        <img
-          src={scrollToTp}
-          alt="Scroll to top"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-3 md:bottom-6 right-2 md:right-6 z-50  cursor-pointer hover:scale-110 transition-transform duration-300"
-        />
+         <div className="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center fixed bottom-6 md:bottom-10 right-6 tablet:right-10 z-50  cursor-pointer hover:scale-110 transition-transform duration-300 shadow-[0px_4px_4px_rgba(0,0,0,0.20)]">
+         <Navigation2
+           color="#12697B"
+           fill="#12697B"
+           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+         />
+       </div>
       )}
     </div>
   );

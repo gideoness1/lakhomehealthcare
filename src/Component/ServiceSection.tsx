@@ -1,14 +1,14 @@
 import mapsheet from "../assets/mapsheet.png";
-import group1 from "../assets/Group 2.png";
-import group2 from "../assets/Group2.png";
-import group3 from "../assets/group3.png";
-import group4 from "../assets/Group4.png";
-import group5 from "../assets/Group5.png";
-import group6 from "../assets/Group6.png";
-import group7 from "../assets/Group7.png";
-import group8 from "../assets/Group8.png";
-import group9 from "../assets/Group9.png";
-import group10 from "../assets/Group10.png";
+import group1 from "../assets/Group1.svg";
+import group2 from "../assets/Group2.svg";
+import group3 from "../assets/Group3.svg";
+import group4 from "../assets/Group4.svg";
+import group5 from "../assets/Group5.svg";
+import group6 from "../assets/Group6.svg";
+import group7 from "../assets/Group7.svg";
+import group8 from "../assets/Group8.svg";
+import group9 from "../assets/Group9.svg";
+import group10 from "../assets/Group10.svg";
 
 const services = [
   { image: group1, title: "24/7 Care" },
@@ -28,7 +28,7 @@ const ServicesCards = () => {
     <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-8.5 gap-x-[32px]">
       {services.map((item) => (
         <div className="flex  items-center gap-x-4">
-          <img src={item.image} alt="group" className="w-6 lg:w-fit" />
+          <img src={item.image} alt="group" className="w-6 lg:w-fit object-contain" />
           <p className="text-[#4E4E4E] text-[14px] lg:text-[18px] manrope-semibold ">
             {item.title}
           </p>

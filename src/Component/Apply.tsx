@@ -128,7 +128,7 @@ export const Apply = () => {
           <div className={`mb-4`}>
             <h3 className={`leading-[24px] manrope-bold`}>Location</h3>
             <span className={`leading-[24px] manrope-medium`}>
-              Accra, Greater Accra
+              USA Columbus, Ohio
             </span>
           </div>
           <div className={`w-full h-[1px] bg-[#E7E7E7] mb-4`}></div>

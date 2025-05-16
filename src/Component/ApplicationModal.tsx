@@ -2,7 +2,6 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import Button from "./ui/Button.tsx";
 import { IoClose } from "react-icons/io5";
-import { FiDownload } from "react-icons/fi";
 import pdf from "../assets/pdf.svg";
 import upload from "../assets/upload.svg";
 import { useNavigate } from "react-router-dom";
@@ -51,44 +50,18 @@ const ApplicationModal = () => {
                 className={`cursor-pointer`}
               />
             </div>
-            <p className="text-gray text-[12px] md:text-[14px] manrope-regular md:w-[455px] mb-3 md:mb-4">
-              Download the file below, fill the form and submit the filled
-              document in the area provided below
-            </p>
 
             <div className="mb-4">
-              <h3 className="text-gray text-[14px] md:text-[16px] manrope-bold mb-[10px]">
-                Download document
-              </h3>
-              <div className="flex items-center justify-between border border-[#C3D0DB] p-4 rounded-lg mb-4">
-                <div className="flex items-center gap-x-[10px]">
-                  <div>
-                    <img src={pdf} alt="pdf_logo" />
-                  </div>
-                  <p className="manrope-bold text-[14px] leading-6 text-gray">
-                    Lak Home Health Application Form
-                  </p>
-                </div>
-                <FiDownload size={24} />
-              </div>
-              <div className="w-full h-[1px] bg-[#E7E7E7]"></div>
-            </div>
-
-            <div className="mb-4">
-              <h2 className="block text-[14px] md:text-[16px] manrope-bold leading-6 text-gray mb-[10px]">
-                Submit Application
-              </h2>
-
               <p className="manrope-regular text-[12px] md:text-[14px] leading-6 text-gray mb-[10px]">
                 Upload the filled document here
               </p>
 
               <div
-                className="w-full md:h-[152px] flex-center border border-dashed border-[#9A1E23] rounded-lg mb-4 p-3 md:p-0"
+                className="w-full md:h-[152px]  border border-dashed border-[#0E5462] rounded-lg mb-4 p-3 md:p-0"
                 onDrop={handleFileDrop}
                 onDragOver={(e) => e.preventDefault()}
               >
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center h-full">
                   {file ? (
                     <div className="flex flex-col items-center gap-y-2">
                       <img
@@ -101,7 +74,7 @@ const ApplicationModal = () => {
                       </p>
                       <label
                         htmlFor="file"
-                        className="text-[#B22922] text-[12px] manrope-medium cursor-pointer"
+                        className="text-[#0E5462] text-[12px] manrope-medium cursor-pointer"
                       >
                         or select file to upload
                       </label>
@@ -109,12 +82,12 @@ const ApplicationModal = () => {
                   ) : (
                     <>
                       <img src={upload} alt="upload_logo" />
-                      <p className="text-gray text-[14px] leading-6 manrope-bold">
+                      <p className="text-[#4F4F4F] text-[14px] leading-6 manrope-bold">
                         Drag & drop{" "}
                       </p>
                       <label
                         htmlFor="file"
-                        className="text-[#B22922] text-[12px] manrope-medium cursor-pointer"
+                        className="text-[#0E5462] text-[12px] manrope-medium cursor-pointer"
                       >
                         or select file to upload
                       </label>

@@ -76,7 +76,7 @@ export const WorkWithUS = () => {
           </div>
         </div>
       </div>
-      <div className={`py-[100px] px-[16px] md:px-[64px]`}>
+      <div className={`pb-[100px] px-[16px] md:px-[64px]`}>
         <div
           className={`flex flex-col justify-center items-center mb-[60px] lg:mb-6`}
         >
@@ -98,7 +98,7 @@ export const WorkWithUS = () => {
         </div>
 
         <div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 lg:gap-x-10 2xl:gap-x-0 gap-4">
+          <div className="flex flex-col justify-center flex-wrap md:flex-row gap-8">
             {applicationList.map((card) => (
               <Card
                 key={card.id}

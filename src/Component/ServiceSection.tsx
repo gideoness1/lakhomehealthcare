@@ -5,8 +5,8 @@ import group3 from "../assets/Group3.svg";
 import group4 from "../assets/Group4.svg";
 import group5 from "../assets/Group5.svg";
 import group6 from "../assets/Group6.svg";
+import group7 from "../assets/Group7.svg";
 import group8 from "../assets/Group8.svg";
-import group9 from "../assets/Group9.svg";
 import group10 from "../assets/Group10.svg";
 
 const services = [
@@ -14,9 +14,9 @@ const services = [
   { image: group2, title: "Skilled Nursing (RNs and LPNs)" },
   { image: group3, title: "Home Health Aides" },
   { image: group4, title: "Personal Care" },
-  { image: group5, title: "Companionship" },
+  { image: group5, title: "Short Term Care" },
   { image: group6, title: "Medical Transportation" },
-  { image: group9, title: "Light House Keeping" },
+  { image: group7, title: "Long Term Care" },
   { image: group8, title: "Medication management" },
   { image: group10, title: "Disability Support" },
 ];

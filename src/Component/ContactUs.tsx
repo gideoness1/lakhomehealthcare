@@ -1,6 +1,7 @@
 import map from "../assets/map.png";
 import group1 from "../assets/contact1.png";
 import group2 from "../assets/contact2.png";
+import group3 from "../assets/contact3.png";
 import group4 from "../assets/contact4.png";
 
 const ContactUs = () => {
